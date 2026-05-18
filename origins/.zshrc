@@ -13,6 +13,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 
 plugins=(
+    zsh-autocomplete
     git
     zsh-autosuggestions
     zsh-syntax-highlighting
@@ -22,6 +23,8 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
+# Custom keybindings
+bindkey '^]' autosuggest-accept
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
