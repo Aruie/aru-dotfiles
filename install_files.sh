@@ -68,8 +68,8 @@ if ! command -v zoxide &> /dev/null; then
 fi
 
 # Copy dotfiles (not symlink)
-cp ~/aru-dotfiles/origins/.zshrc ~/.zshrc
-cp ~/aru-dotfiles/origins/.p10k.zsh ~/.p10k.zsh
+cp ./origins/.zshrc ~/.zshrc
+cp ./origins/.p10k.zsh ~/.p10k.zsh
 
 echo "Installation complete! Please run 'chsh -s $(which zsh)' to set zsh as your default shell."
 echo "Then log out and log back in for changes to take effect."
